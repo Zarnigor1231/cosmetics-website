@@ -1,0 +1,67 @@
+.ourproduct-box{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 527px;
+    display: inherit;
+    text-align: center;
+}
+.ourproduct-box-title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #111111;
+}
+.ourproduct-box-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+}
+.ourproduct-btn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+.product-title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #111111;
+}
+.product-price{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #111111;
+}
+
+.product-shodow{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11.83px 1.17px rgba(0, 0, 0, 0.06);
+       
+}
+.product-shodow:hover{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.06);
+}

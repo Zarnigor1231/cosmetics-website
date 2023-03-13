@@ -1,0 +1,140 @@
+{
+    "newProducts":[
+        {
+            "id":1,
+            "name":"Bubble Shooter Challenge",
+            "img":"https://cs6.livemaster.ru/storage/72/a2/e6dfa303177b554cee3faf51farx.jpg",
+            "price":11.90,
+            "like":0
+        },
+        {
+            "id":2,
+            "name":"Body Cream",
+            "img":"https://pikinail.ru/upload/9/2589/250/3-3.jpg",
+            "price":24,
+            "like":0
+        },
+        {
+            "id":3,
+            "name":"Privai",
+            "img":"https://i.pinimg.com/originals/79/12/9d/79129d4b1bb29ec97827bbfdfb5dc8b8.jpg",
+            "price":30,
+            "like":0
+        },
+        {
+            "id":4,
+            "name":"Rose",
+            "img":"https://i.pinimg.com/736x/98/98/e8/9898e82335e6cdb886c0b3b6b8bd52db--skincare-routine-style-guides.jpg",
+            "price":11.90,
+            "like":0
+        }
+    ],
+    "onsale":[
+        {
+            "id":1,
+            "name":"Alison Cosmetics",
+            "img":"https://cdn.dribbble.com/users/3870314/screenshots/6915012/4by3mockup_4x.jpg",
+            "price":25,
+            "like":0
+        },
+        {
+            "id":2,
+            "name":"Johara Cosmetics",
+            "img":"http://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/wi/art/sami-directs-enters-women-beauty-b7c39b30e3.jpg",
+            "price":22,
+            "like":0
+        },
+        {
+            "id":3,
+            "name":"HL Cosmetics",
+            "img":"http://shop-malutka.ru/userfiles/images/a15ec3b9a617ccdf652b89bb5baa437d.jpg",
+            "price":39,
+            "like":0
+        },
+        {
+            "id":4,
+            "name":"Rose",
+            "img":"https://i.pinimg.com/736x/98/98/e8/9898e82335e6cdb886c0b3b6b8bd52db--skincare-routine-style-guides.jpg",
+            "price":50,
+            "like":0
+        }
+    ],
+    "upcomingProducts":[
+        {
+            "id":1,
+            "name":"Avon Nailwear Pro",
+            "img":"https://i.pinimg.com/originals/d2/7f/23/d27f234927973f87a16cc17562060968.jpg",
+            "price":50,
+            "like":0
+        },
+        {
+            "id":2,
+            "name":"GoEco Cosmetics",
+            "img":"https://aroma-avenue.ru/wp-content/uploads/0/b/8/0b8979d87269006124d821608300306c.jpeg   ",
+            "price":24,
+            "like":0
+        },
+        {
+            "id":3,
+            "name":"Cosmetics Mockup Set",
+            "img":"https://unblast.com/wp-content/uploads/2018/08/Cosmetics-Mockup.jpg",
+            "price":80,
+            "like":0
+        },
+        {
+            "id":4,
+            "name":"Mac Cosmetic",
+            "img":"https://pbs.twimg.com/media/DjA5kdrW0AA0DxT.jpg",
+            "price":70,
+            "like":0
+        }
+    ],
+    "newArrivalProducts":[
+        {
+            "id":1,
+            "name":"All Natural Makeup Beauty Cosmetics",
+            "img":"https://i.pinimg.com/736x/fd/40/35/fd40352a2a5587449a417d47d5fbce9b.jpg",
+            "price":100,
+            "like":0
+        },
+        {
+            "id":2,
+            "name":"On Trend Makeup and Beauty Cosmetics",
+            "img":"https://i.pinimg.com/originals/fd/9f/09/fd9f097cfcc0bca2b5b2976cbd3bc289.jpg",
+            "price":39.05,
+            "like":0
+        },
+        {
+            "id":3,
+            "name":"The Cosmetics and Beauty brand Shoppe",
+            "img":"https://i.pinimg.com/originals/60/05/5f/60055fbc9bd098135d152526d761ef47.jpg",
+            "price":70.19,
+            "like":0
+        },
+        {
+            "id":4,
+            "name":"orginal Age Defying Cosmetics Makeup",
+            "img":"https://i.pinimg.com/originals/7d/9e/be/7d9ebeb8c703995e6122d325a4bdd523.jpg",
+            "price":45.11,
+            "like":0
+        }
+    ],
+    "fromOurLatestBlogsBox":[
+        {
+            "id":1,
+            "img":"https://www.r-ulybka.ru/upload/iblock/49c/49c002c88861e5b5a0c5ceaf5f690cfa.jpg"
+        },
+        {
+            "id":2,
+            "img":"https://images.squarespace-cdn.com/content/v1/5ae8bd2f89c1723a6f6f557b/1550265154909-AX3OB0TCL829N83T4YU5/Cosmetics+Fulfillment+and+Automated+Data+Collection"
+        },
+        {
+            "id":3,
+            "img":"http://upakovano.ru/upload/iblock/d18/php22caeG.jpg"
+        },
+        {
+            "id":4,
+            "img":"https://pbs.twimg.com/media/Ev9CP1LWQAIvcQF?format=jpg&name=large"
+        }
+    ]
+}

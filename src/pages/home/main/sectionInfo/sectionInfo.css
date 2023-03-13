@@ -1,0 +1,47 @@
+.sectioninfo-list{
+    margin-top: 208px;
+    margin-bottom: 80px;
+    padding: 30px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    /* padding:64px;==> the method given in this order does not work */
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    background: #5A5AC9;
+}
+
+.sectioninfo-list-item{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* .sectioninfo-item-box{
+   width: 215px;
+} */
+
+.sectioninfo-item-title{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.sectioninfo-item-text{
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: #FFFFFF;
+}
