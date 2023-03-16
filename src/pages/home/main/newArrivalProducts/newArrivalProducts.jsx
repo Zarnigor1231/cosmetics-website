@@ -7,13 +7,14 @@ function NewArrivalProducts() {
     // const [toggle, setToggle] = React.useState('newProducts')
     const [product, setProduct] = React.useState()
 
+
     React.useEffect(() => {
         request.get(`/newArrivalProducts`).then((response) => {
             setProduct(response.data)
         }).catch((error) => {
             console.log(error)
         })
-    }, [product])
+    }, [])
     return (
         <Container>
             <div className='ourproduct-box mb-0'>

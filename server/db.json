@@ -16,15 +16,15 @@
         },
         {
             "id":3,
-            "name":"Privai",
-            "img":"https://i.pinimg.com/originals/79/12/9d/79129d4b1bb29ec97827bbfdfb5dc8b8.jpg",
+            "name":"Pikent",
+            "img":"https://cosmigroup.ru/upload/medialibrary/19c/pikenz-1.jpeg",
             "price":30,
             "like":0
         },
         {
             "id":4,
-            "name":"Rose",
-            "img":"https://i.pinimg.com/736x/98/98/e8/9898e82335e6cdb886c0b3b6b8bd52db--skincare-routine-style-guides.jpg",
+            "name":"Harbour Lights Cosmetics",
+            "img":"https://heylilahey.com/wp-content/uploads/2017/05/Gesicht-1.jpg  ",
             "price":11.90,
             "like":0
         }
@@ -32,29 +32,31 @@
     "onsale":[
         {
             "id":1,
-            "name":"Alison Cosmetics",
-            "img":"https://cdn.dribbble.com/users/3870314/screenshots/6915012/4by3mockup_4x.jpg",
-            "price":25,
-            "like":0
-        },
-        {
-            "id":2,
             "name":"Johara Cosmetics",
-            "img":"http://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/wi/art/sami-directs-enters-women-beauty-b7c39b30e3.jpg",
+            "img":"https://goldapple.ru/media/catalog/product/cache/0a19ad76fdd08744e75b836c7a3f78eb/8/8/887167157330_1_hkvmnkjjwafqbvct.jpg",
             "price":22,
             "like":0
         },
+
+
         {
-            "id":3,
+            "id":2,
             "name":"HL Cosmetics",
             "img":"http://shop-malutka.ru/userfiles/images/a15ec3b9a617ccdf652b89bb5baa437d.jpg",
             "price":39,
             "like":0
         },
         {
+            "id":3,
+            "name":"Alison Cosmetics",
+            "img":"https://goldapple.ru/media/catalog/product/cache/0a19ad76fdd08744e75b836c7a3f78eb/6/5/653715f81513c9434bd78c8afece5322.jpg",
+            "price":25,
+            "like":0
+        },
+        {
             "id":4,
-            "name":"Rose",
-            "img":"https://i.pinimg.com/736x/98/98/e8/9898e82335e6cdb886c0b3b6b8bd52db--skincare-routine-style-guides.jpg",
+            "name":"Cosmetics",
+            "img":"http://millefioriskincare.com/wp-content/uploads/1240_4-1.jpg",
             "price":50,
             "like":0
         }
@@ -92,15 +94,15 @@
     "newArrivalProducts":[
         {
             "id":1,
-            "name":"All Natural Makeup Beauty Cosmetics",
-            "img":"https://i.pinimg.com/736x/fd/40/35/fd40352a2a5587449a417d47d5fbce9b.jpg",
+            "name":"Flax Coconut Essential Oil",
+            "img":"https://krasota3.ru/assets/files/PURE-BRAZILIAN/100_PURE_cosmetics.jpg",
             "price":100,
             "like":0
         },
         {
             "id":2,
-            "name":"On Trend Makeup and Beauty Cosmetics",
-            "img":"https://i.pinimg.com/originals/fd/9f/09/fd9f097cfcc0bca2b5b2976cbd3bc289.jpg",
+            "name":"Letshi Bio Cosmetics",
+            "img":"https://mir-s3-cdn-cf.behance.net/project_modules/1400/b6d99049231363.58ae8ce27c73e.jpg",
             "price":39.05,
             "like":0
         },
@@ -113,8 +115,8 @@
         },
         {
             "id":4,
-            "name":"orginal Age Defying Cosmetics Makeup",
-            "img":"https://i.pinimg.com/originals/7d/9e/be/7d9ebeb8c703995e6122d325a4bdd523.jpg",
+            "name":"Oh LoLa Marc Jacobs",
+            "img":"https://scooparticle.com/wp-content/uploads/2019/10/img_3702.jpg",
             "price":45.11,
             "like":0
         }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router'
+import Footer from '../Components/Footer/Footer'
 import {Header} from '../Components/Header/Header'
 
 function MainLayout() {
@@ -14,6 +15,7 @@ function MainLayout() {
      </main>
 
      <footer>
+        <Footer />
      </footer>
 
     </>

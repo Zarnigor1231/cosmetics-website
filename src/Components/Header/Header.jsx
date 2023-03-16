@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 // img 
 import facebook from './imgs/facebook.svg'
@@ -74,64 +74,52 @@ export const Header = () => {
                             </ul>
                         </div>
                     </div>
-
-
                 </Container>
             </div>
 
             <>
                 <Container>
-                    <div className='header-bottom'>
+                    <div className='header-bottom pb-5'>
                         <Link className='header-bottom-logo'>
                             <img src={logo} alt="Header Logo" />
                         </Link>
                         <nav className='header-nav'>
-                            <ul className='header-nav-list'>
+                            <ul className='flex justify-between gap-4'>
                                 <li className='header-nav-item'>
-                                    <Link className='header-nav-item-link' to='/'>
-                                        Home
-                                    </Link>
+                                    <NavLink to={"/"} className={({isActive}) =>  isActive ? "text-indigo-600 font-normal" : "hover:text-indigo-600 font-normal"} >Home</NavLink>
                                 </li>
                                 <li className='header-nav-item'>
-                                    <Link className='header-nav-item-link' to='/'>
-                                        Shop
-                                    </Link>
+                                    <NavLink to={"/shop"} className={({isActive}) =>  isActive ? "text-indigo-600 font-normal" : "hover:text-indigo-600 font-normal"} >Shop</NavLink>
                                 </li>
                                 <li className='header-nav-item'>
-                                    <Link className='header-nav-item-link' to='/'>
-                                        Pages
-                                    </Link>
+                                    <NavLink to={"/pages"} className={({isActive}) =>  isActive ? "text-indigo-600 font-normal" : "hover:text-indigo-600 font-normal"} >Pages</NavLink>
                                 </li>
                                 <li className='header-nav-item'>
-                                    <Link className='header-nav-item-link' to='/'>
-                                        Blog
-                                    </Link>
+                                    <NavLink to={"/blog"} className={({isActive}) =>  isActive ? "text-indigo-600 font-normal" : "hover:text-indigo-600 font-normal"} >Blog</NavLink>
                                 </li>
                                 <li className='header-nav-item'>
-                                    <Link className='header-nav-item-link' to='/'>
-                                        Admin Panel
-                                    </Link>
+                                    <NavLink to={"/adminPanel"} className={({isActive}) =>  isActive ? "text-indigo-600 font-normal" : "hover:text-indigo-600 font-normal"} >Admin Panel</NavLink>
                                 </li>
                             </ul>
                         </nav>
 
                         <div className='header-bottom-nav'>
-                            <div className='header-bottom-nav-img'>
+                            <div className='header-bottom-nav-img hover:shadow-md hover:rounded p-0.5'>
                                 <img src={search} alt="search" />
                             </div>
                             <ul className='header-bottom-list'>
-                                <li className='header-bottom-item'>
+                                <li className='header-bottom-item hover:shadow-md hover:rounded p-0.5'>
                                     <Link className='header-bottom-item-link'>
                                         <img className='header-bottom-item-img' src={shuffle} alt="shuffle" />
                                     </Link>
                                 </li>
-                                <li className='header-bottom-item'>
-                                    <Link className='header-bottom-item-link'>
+                                <li className='header-bottom-item hover:shadow-md hover:rounded p-0.5'>
+                                    <Link to='/wishlist' className='header-bottom-item-link'>
                                         <img className='header-bottom-item-img' src={shape} alt="shape" />
                                     </Link>
                                 </li>
-                                <li className='header-bottom-item'>
-                                    <Link className='header-bottom-item-link'>
+                                <li className='header-bottom-item hover:shadow-md hover:rounded p-0.5'>
+                                    <Link to="/cart" className='header-bottom-item-link'>
                                         <img className='header-bottom-item-img' src={bag} alt="bag" />
                                     </Link>
                                 </li>

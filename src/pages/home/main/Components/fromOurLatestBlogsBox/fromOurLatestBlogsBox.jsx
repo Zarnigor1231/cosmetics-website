@@ -7,7 +7,7 @@ import './fromOurLatestBlogsBox.css'
 function FromOurLatestBlogsBox({ product }) {
   return (
     <div>
-      <ul className='flex content-center gap-5 mb-20'>
+      <ul className='flex content-center gap-5 mb-16'>
         {
           product?.map((item) => {
             return (
