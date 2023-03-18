@@ -28,7 +28,7 @@ function Footer() {
                                 that create high quality wordpress plugins, Html, React Template.
                             </p>
                             <ul className='flex gap-3'>
-                                <li className='w-7 h-7  rounded-full bg-white'>
+                                <li className='w- h-7  rounded-full bg-white'>
                                     <Link to='/'>
                                         <img className='text-black-600' src={instagram} alt="Footer instagram" />
                                     </Link>
@@ -51,7 +51,7 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <ul className='flex gap-10 content-center'>
+                        <ul className='flex gap-6 content-center'>
                             <li>
                                 <h2>Information</h2>
                                 <div className='relative  bg-neutral-400 mt-4'>

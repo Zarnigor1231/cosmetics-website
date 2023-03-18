@@ -37,13 +37,12 @@ function Wishlist() {
                         Your cart items
                     </h3>
                     <hr className='mt-4 mb-4' />
-                    <ul className='bg-violet-500 flex content-center justify-between pt-4 pb-4 pr-10 pl-10'>
-                        <li className='text-white font-normal text-sm'>Product Image</li>
-                        <li className='text-white font-normal text-sm'>Product Name</li>
-                        <li className='text-white font-normal text-sm'>Stock Status</li>
-                        <li className='text-white font-normal text-sm'>Qty</li>
-                        <li className='text-white font-normal text-sm'>Price</li>
-                        <li className='text-white font-normal text-sm'>Action</li>
+                    <ul className='bg-violet-500 flex content-center pt-4 pb-4 pl-10'>
+                        <li className='text-white font-normal text-sm mr-28 '>Product Image</li>
+                        <li className='text-white font-normal text-sm ml-1 mr-60'>Product Name</li>
+                        <li className='text-white font-normal text-sm mr-20'>Stock Status</li>
+                        <li className='text-white font-normal text-sm ml-1  mr-24'>Like</li>
+                        <li className='text-white font-normal text-sm  mr-36'>Price</li>
                         <li className='text-white font-normal text-sm'>Checkout</li>
                     </ul>
                     <ul className='mb-20'>
@@ -58,21 +57,12 @@ function Wishlist() {
                                             <h4 className='my-auto truncate w-60'>{item.name}</h4>
                                             <button className='my-auto h-6 px-2 rounded-md bg-violet-500 text-white font-normal text-sm'>In Stock</button>
                                             <div className='my-auto flex content-center justify-between'>
-                                                <span className='py-5 px-6 bg-neutral-200 rounded-xl'>d</span>
-                                                <div className='flex flex-col justify-center ml-3'>
-                                                    <button className='px-1 pt-1 hover:shadow-md'>
-                                                        <i className="fa-sharp fa-solid fa-chevron-up"></i>
-                                                    </button>
-                                                    <button className='px-1 pt-1 hover:shadow-md'>
-                                                        <i className="fa-sharp fa-solid fa-chevron-down"></i>
-                                                    </button>
-                                                </div>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png" width={25} height={25} alt="heart red" />
+                                                {/* <i className="fa-solid fa-heart text-red-500"></i> */}
                                             </div>
                                             <p className='my-auto'>{item.price} $</p>
-                                            <button className='hover:opacity-75' >
-                                                <i className="fa-solid fa-trash"></i>
-                                            </button>
-                                            <button className='my-auto pl-4 pr-5 pt-4 pb-9 h-6 rounded-md bg-neutral-900 text-white font-normal text-sm hover:opacity-95'>Add to cart</button>
+
+                                            <button className='my-auto pl-4 pr-5 pt-4 pb-9 h-6 rounded-md bg-violet-700 text-white font-normal text-sm hover:opacity-95'>Add to cart</button>
                                         </div>
                                         <hr className='mt-2' />
                                     </li>
@@ -80,32 +70,6 @@ function Wishlist() {
                             })
                         }
                     </ul>
-
-
-                    <div className='w-1/2'>
-                        <div className='bg-neutral-100 p-10 mb-3 rounded-md'>
-                            <div>
-                                <div className='flex content-center justify-between mb-1'>
-                                    <h5>Product</h5>
-                                    <p className='font-normal text-sm'>Total</p>
-                                </div>
-                                <div className='flex content-center justify-between mb-4'>
-                                    <h5>Shipping</h5>
-                                    <p className='font-normal text-sm text-neutral-500'>Free shipping</p>
-                                </div>
-                            </div>
-                            <hr />
-                            <div className='flex content-center justify-between mb-4 mt-4'>
-                                <h5>Total</h5>
-                                <p className='font-bold text-ms text-violet-700'>$329</p>
-                            </div>
-                            <hr />
-                        </div>
-                        <div className='felx content-center mt-4 mb-32'>
-                            <button className='p-3 bg-violet-500 mr-5 rounded-md text-white hover:opacity-90'>Update Cart</button>
-                            <button className='p-3 bg-violet-500 rounded-md text-white hover:opacity-90'>Checkout</button>
-                        </div>
-                    </div>
                 </Container>
             </div>
         </>

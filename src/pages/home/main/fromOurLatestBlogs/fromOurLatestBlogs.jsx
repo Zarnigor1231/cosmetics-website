@@ -20,7 +20,13 @@ function FromOurLatestBlogs() {
         <span className='block w-1/6 my-3 h-0.5 mx-auto bg-indigo-500'></span>
         <p className='ourproduct-box-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
-      <FromOurLatestBlogsBox product={product} />
+      <ul className='flex content-center gap-5 mb-16'>
+        {
+          product?.map((item) => {
+            <FromOurLatestBlogsBox {...item}  />
+          })
+        }
+      </ul>
       <hr />
       <div className='mt-8'>
         <ul className='flex content-center justify-around mb-8'>

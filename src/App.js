@@ -14,6 +14,11 @@ function App() {
         <Route path="cart" element={<Cart />} />
         <Route path="wishlist" element={<Wishlist />} />
       </Route>
+      <Route path='*' element={<>
+        <h1 className='mx-auto  text-7xl text-center pt-20'>
+          Page Not Found 404 
+        </h1>
+      </>} />
     </Routes>
   );
 }

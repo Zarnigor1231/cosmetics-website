@@ -22,7 +22,19 @@ function NewArrivalProducts() {
                 <span className='block w-1/6 my-3 h-0.5 mx-auto bg-indigo-500'></span>
                 <p className='ourproduct-box-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat.</p>
             </div>
-            <Products product={product} />
+            <div>
+                <ul className='flex content-center gap-5 mb-20'>
+                    {
+                        product?.map((item,index) => {
+                            return (
+                                <>
+                                    <Products {...item} key={item.id} />
+                                </>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
         </Container>
     )
 }

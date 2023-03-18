@@ -1,17 +1,36 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Container } from '@mui/material'
-import { request } from '../../config/request'
+import { useSelector, useDispatch } from 'react-redux'
+import { store} from '../../redux/store'
+import { saveState } from '../../hooks'
+import { toggleAmount ,removeProduct } from '../../redux/productSlice'
+
+
+store.subscribe(() => {
+  saveState("product" , store.getState().productSlice)
+})
 
 function Cart() {
-  const [product, setProduct] = React.useState()
-  React.useEffect(() => {
-    request.get(`/newArrivalProducts`).then((response) => {
-      setProduct(response.data)
-    }).catch((error) => {
-      console.log(error)
-    })
-  }, [])
+
+  const { products } = useSelector((state) => state.productSlice)
+  // const [ id , setId ] =React.useState(0)
+
+  const dispatch = useDispatch()
+
+  const toggleBtn = ({type , index}) => {
+    console.log(index)
+    dispatch(toggleAmount({ type:type, id: products[index].id }))
+
+  }
+
+  const remove = (index) => {
+    dispatch(removeProduct(products[index].id))
+  }
+
+  const removeAll = (index) => {
+    dispatch(removeProduct(products[index].id))
+  }
 
   return (
     <>
@@ -36,20 +55,20 @@ function Cart() {
             Your cart items
           </h3>
           <hr className='mt-4 mb-4' />
-          <ul className='bg-violet-500 flex content-center justify-between pt-4 pb-4 pr-10 pl-10'>
-            <li className='text-white font-normal text-sm'>Product Image</li>
-            <li className='text-white font-normal text-sm'>Product Name</li>
-            <li className='text-white font-normal text-sm'>Stock Status</li>
-            <li className='text-white font-normal text-sm'>Qty</li>
-            <li className='text-white font-normal text-sm'>Price</li>
-            <li className='text-white font-normal text-sm'>Action</li>
-            <li className='text-white font-normal text-sm'>Checkout</li>
+          <ul className='bg-violet-500 flex content-center pt-4 pb-4 pl-10'>
+            <li className='text-white font-normal text-sm mr-20 '>Product Image</li>
+            <li className='text-white font-normal text-sm ml-1 mr-28'>Product Name</li>
+            <li className='text-white font-normal text-sm mr-24'>Stock Status</li>
+            <li className='text-white font-normal text-sm  mr-28'>Qty</li>
+            <li className='text-white font-normal text-sm ml-5  mr-20'>Price</li>
+            <li className='text-white font-normal text-sm ml-6 mr-24'>Price All</li>
+            <li className='text-white font-normal text-sm ml-1'>Checkout</li>
           </ul>
           <ul className='mb-20'>
             {
-              product?.map((item) => {
+              products?.map((item , index) => {
                 return (
-                  <li key={item.id} className='mb-2 mt-2'>
+                  <li key={index} className='mb-2 mt-2'>
                     <div className='flex justify-between content-center'>
                       <div>
                         <img src={item.img} width={150} height={150} alt="Cart img" />
@@ -57,21 +76,27 @@ function Cart() {
                       <h4 className='my-auto truncate w-36'>{item.name}</h4>
                       <button className='my-auto h-6 px-2 rounded-md bg-violet-500 text-white font-normal text-sm'>In Stock</button>
                       <div className='my-auto flex content-center justify-between'>
-                        <span className='py-5 px-6 bg-neutral-200 rounded-xl'>d</span>
+                        <span className='w-16 py-5 px-5 bg-neutral-200 rounded-xl text-center'>{item.count}</span>
                         <div className='flex flex-col justify-center ml-3'>
-                          <button className='px-1 pt-1 hover:shadow-md'>
+                          <button onClick={() => toggleBtn({type:'add' , index})} className='px-1 pt-1 hover:shadow-md w-16'>
                             <i className="fa-sharp fa-solid fa-chevron-up"></i>
                           </button>
-                          <button className='px-1 pt-1 hover:shadow-md'>
-                            <i className="fa-sharp fa-solid fa-chevron-down"></i>
-                          </button>
+                          {
+                            item.count === 1 ?
+                              <button onClick={() => remove(index)} className='px-1 pt-1 hover:shadow-md w-16 text-red-600'>
+                                {/* <i className="fa-solid fa-trash text-red-600"></i> */}
+                                delete
+                              </button>
+                              :
+                              <button onClick={() => toggleBtn({type:"remove" , index})} className='px-1 pt-1 hover:shadow-md w-16'>
+                                <i className="fa-sharp fa-solid fa-chevron-down"></i>
+                              </button>
+                          }
                         </div>
                       </div>
-                      <p className='my-auto w-16'>{item.price} $</p>
-                      <button className='hover:opacity-75' >
-                        <i className="fa-solid fa-trash"></i>
-                      </button>
-                      <button className='my-auto pl-4 pr-5 pt-4 pb-9 h-6 rounded-md bg-neutral-900 text-white font-normal text-sm hover:opacity-95'>Add to cart</button>
+                      <p className='my-auto w-16'>{item.price}</p>
+                      <p className='my-auto w-16'>{item.userPrice} $</p>
+                      <button onClick={() => removeAll(index)} className='my-auto pl-4 pr-5 pt-4 pb-9 h-6 rounded-md bg-neutral-900 text-white font-normal text-sm hover:opacity-95'>Remove</button>
                     </div>
                     <hr className='mt-2' />
                   </li>

@@ -1,13 +1,16 @@
 import React from 'react'
 import { Container } from '@mui/material'
 import { request } from '../../../../config/request'
+import { Products } from '../Components'
+
 
 
 // img
 import collections from './imgs/collections.jpg'
 import getUp from './imgs/getUp.jpg'
 import mackup from './imgs/mackup.jpg'
-import { Products } from '../Components'
+
+
 
 
 function OurProducts() {
@@ -15,7 +18,7 @@ function OurProducts() {
     const [product, setProduct] = React.useState()
 
     React.useEffect(() => {
-        request.get(`/${toggle}`).then((response) => {
+        request.get(`${toggle}`).then((response) => {
             setProduct(response.data)
         }).catch((error) => {
             console.log(error)
@@ -44,7 +47,21 @@ function OurProducts() {
                     <button className={toggle === 'upcomingProducts' ? 'text-blue-700' : ''} onClick={() => toggleProduct('upcomingProducts')}>Upcoming Products</button>
                 </li>
             </ul>
-            <Products  product = {product} />
+            {/* <Products  product = {product} /> */}
+            <div>
+                <ul className='flex content-center gap-5 mb-20'>
+                    {
+                        product?.map((item , index) => {
+                            return(
+                                <>
+                                <Products {...item} key={item.id} />
+
+                                </>
+                            )
+                        })
+                    }
+                </ul>
+            </div>
             <div>
                 <ul className='flex w-full mb-16 content-center'>
                     <li className='w-1/4 mr-4'>

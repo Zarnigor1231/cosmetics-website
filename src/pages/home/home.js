@@ -1,6 +1,7 @@
 import React from 'react'
 import { Advertising} from './advertising/advertising'
-import { SectionInfo , OurProducts , NewArrivalProducts, FromOurLatestBlogs } from './main'
+import { SectionInfo ,  NewArrivalProducts, FromOurLatestBlogs , OurProducts } from './main'
+// import ProductOur from '../../Components/test'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     </section>
     <section>
       <OurProducts />
+      {/* <ProductOur /> */}
     </section>
     <section>
       <NewArrivalProducts />
